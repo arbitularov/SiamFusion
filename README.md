@@ -1,6 +1,17 @@
 # SiamFusion PyTorch implementation
 ## Introduction
-This is my Thesis in the direction of Visual Object Tracking
+This is my Thesis in the direction of Visual Object Tracking.
+
+**SiamFusion architecture**
+<center>
+    <figure>
+        <img src="img/SiamFusion.png" height="10%" width="60%">
+        <figcaption>
+        </figcaption>
+    </figure>
+</center>
+
+
 
 ## How to Run - Training
 1. **Prerequisites:** The project was built using **python 3.6** and tested on Ubuntu 18.04 and 16.04. It was tested on a **GTX 1080 Ti**. Furthermore it requires [PyTorch 4.1](https://pytorch.org/).
@@ -27,7 +38,7 @@ root_dir_for_OTB     = ... (Optional for train on GOT-10k dataset)
 python3 train.py
 ```
 
-##Results - Training
+## Results - Training
 **OTB2015**
 <center>
     <figure>
