@@ -11,8 +11,6 @@ This is my Thesis in the direction of Visual Object Tracking.
     </figure>
 </center>
 
-
-
 ## How to Run - Training
 1. **Prerequisites:** The project was built using **python 3.6** and tested on Ubuntu 18.04 and 16.04. It was tested on a **GTX 1080 Ti**. Furthermore it requires [PyTorch 4.1](https://pytorch.org/).
 
@@ -25,17 +23,33 @@ This is my Thesis in the direction of Visual Object Tracking.
     </figure>
 </center>
 
-3. In **config.py** script `root_dir_for_GOT_10k` change to your directory. 
+3. Download the ImageNet VID Dataset in http://bvisionweb1.cs.unc.edu/ILSVRC2017/download-videos-1p39.php and extract it on the folder of your choice (OBS: data reading is done in execution time, so if available extract the dataset in your SSD partition). You can get rid of the test part of the dataset, since it has no Annotations.
+
+4. In **config.py** script `root_dir_for_GOT_10k`, `root_dir_for_VID and` and `root_dir_for_OTB` change to your directory. 
 ```
 root_dir_for_GOT_10k = '/home/arbi/desktop/GOT-10k' <-- change to your directory 
-root_dir_for_VID     = ... (Optional for train on GOT-10k dataset)
-root_dir_for_OTB     = ... (Optional for train on GOT-10k dataset) 
+root_dir_for_VID     = '/home/arbi/desktop/VID'     <-- change to your directory
+root_dir_for_OTB     = '/home/arbi/desktop/OTB2015' <-- change to your directory 
 ```
 
-4. Run the **train.py** script:
-
+5. Run the **train.py** script:
 ```
 python3 train.py
+```
+
+## How to Run - Testing
+1. Download pretrained `model_e31.pth` from [Yandex Disk](https://yadi.sk/d/c-ffSCvtxkdiLw), and put the file under `model/model_e31.pth`.
+<center>
+    <figure>
+        <img src="img/save model.jpg" height="60%" width="50%">
+        <figcaption>
+        </figcaption>
+    </figure>
+</center>
+
+2. Run the **test.py** script:
+```
+python3 test.py
 ```
 
 ## Results - Training
