@@ -5,8 +5,8 @@ This is my Thesis in the direction of Visual Object Tracking.
 **SiamFusion architecture**
 <center>
     <figure>
-        <img src="img/SiamFusion.png" height="10%" width="60%">
         <figcaption>
+            <img src="img/SiamFusion.png" height="10%" width="60%">
         </figcaption>
     </figure>
 </center>
@@ -17,8 +17,8 @@ This is my Thesis in the direction of Visual Object Tracking.
 2. Download the **GOT-10k** Dataset in http://got-10k.aitestunion.com/downloads and extract it on the folder of your choice, in my case it is `/home/arbi/desktop/GOT-10k` (OBS: data reading is done in execution time, so if available extract the dataset in your SSD partition).
 <center>
     <figure>
-        <img src="img/GOT-10k dataset.jpg" height="60%" width="100%">
         <figcaption>
+            <img src="img/GOT-10k dataset.jpg" height="60%" width="100%">
         </figcaption>
     </figure>
 </center>
@@ -41,8 +41,8 @@ python3 train.py
 1. Download pretrained `model_e31.pth` from [Yandex Disk](https://yadi.sk/d/c-ffSCvtxkdiLw), and put the file under `model/model_e31.pth`.
 <center>
     <figure>
-        <img src="img/save model.jpg" height="60%" width="50%">
         <figcaption>
+            <img src="img/save model.jpg" height="60%" width="50%">
         </figcaption>
     </figure>
 </center>
@@ -56,8 +56,8 @@ python3 test.py
 **OTB2015**
 <center>
     <figure>
-        <img src="img/results_for_31.jpg" height="60%" width="100%">
         <figcaption>
+            <img src="img/results_for_31.jpg" height="60%" width="100%">
         </figcaption>
     </figure>
 </center>
@@ -65,8 +65,8 @@ python3 test.py
 **Results on each epoch** 
 <center>
     <figure>
-        <img src="img/results.png" height="60%" width="100%">
         <figcaption>
+            <img src="img/results.png" height="60%" width="100%">
         </figcaption>
     </figure>
 </center>
